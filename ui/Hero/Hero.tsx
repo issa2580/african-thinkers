@@ -71,38 +71,44 @@ const Hero = () => {
   }, [images.length]);
 
   return (
-    <section className="relative min-h-screen bg-background mt-40">
-      <div className="container mx-auto px-4 py-12 flex flex-col lg:flex-row">
-        {/* Contenu principal */}
-        <div className="lg:w-2/3 pr-0 lg:pr-10">
-          <div className="mb-10">
-            <h1 className="text-3xl md:text-6xl font-bold text-accent mb-6 animate-in fade-in duration-700">
-              PENSEURS AFRICAINS
-            </h1>
-            <h2 className="text-xl md:text-2xl text-foreground font-medium animate-in fade-in slide-in-from-top duration-700 delay-200">
-              UN ESPACE NUMÉRIQUE PANAFRICAIN POUR LES ACTEURS DU CHANGEMENT
-            </h2>
-          </div>
+    <section className="py-24 mt-16 bg-background">
+      {/* Titre principal centré */}
+      <div className="container mx-auto px-4 mb-10">
+        <div className="text-center mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold text-accent mb-4 animate-in fade-in duration-700">
+            PENSEURS AFRICAINS
+          </h1>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
+            UN ESPACE NUMÉRIQUE PANAFRICAIN POUR LES ACTEURS DU CHANGEMENT
+          </p>
+        </div>
+      </div>
 
+      {/* Contenu principal */}
+      <div className="container mx-auto px-4 flex flex-col lg:flex-row">
+        {/* Partie gauche - Contenu principal */}
+        <div className="lg:w-2/3 pr-0 lg:pr-10">
           {/* Carrousel d'images */}
           <div className="relative rounded-xl overflow-hidden h-80 md:h-96 shadow-2xl mb-10">
             {images.map((image, index) => (
               <div
                 key={index}
-                className={`absolute inset-0 transition-opacity duration-1000 ${
-                  index === currentImage ? "opacity-100" : "opacity-0"
+                className={`absolute inset-0 ${
+                  index === currentImage ? "block z-10" : "hidden"
                 }`}
               >
                 <Image
                   src={image}
                   alt={`African Thinkers slide ${index + 1}`}
                   className="w-full h-full object-cover"
-                  width={100}
-                  height={200}
+                  width={800}
+                  height={600}
+                  quality={100}
+                  priority={index === 0}
                 />
               </div>
             ))}
-            <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-6">
+            <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-6 z-20">
               <p className="text-white text-lg md:text-xl font-medium">
                 {quotes[currentImage % quotes.length]}
               </p>
@@ -125,8 +131,9 @@ const Hero = () => {
                       src={thinker.image || "/images/placeholder-profile.jpg"}
                       alt={thinker.name}
                       className="w-full h-full object-cover"
-                      width={200}
-                      height={200}
+                      width={400}
+                      height={400}
+                      quality={90}
                     />
                   </div>
                   <div className="p-4">
@@ -156,9 +163,9 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Sidebar - Nouvelle version */}
+        {/* Partie droite - Sidebar */}
         <div className="lg:w-1/3 mt-12 lg:mt-0">
-          <div className="bg-sidebar rounded-xl shadow-lg p-6 sticky top-6">
+          <div className="bg-sidebar rounded-xl shadow-lg p-6 sticky top-32">
             {/* Section de recherche */}
             <div className="mb-8">
               <h4 className="font-bold text-sidebar-foreground text-xl mb-4">

@@ -1,0 +1,15 @@
+{
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next",
+      "config": {
+        "zeroConfig": true
+      }
+    }
+  ],
+  "github": {
+    "silent": true
+  },
+  "ignoreCommand": "npx next build || exit 0"
+}

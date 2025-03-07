@@ -4,6 +4,7 @@ import Discovery from "@/ui/Discovery/Discovery";
 import Hero from "@/ui/Hero/Hero";
 import Navbar from "@/ui/Navbar/Navbar";
 import News from "@/ui/News/News";
+import Statistics from "@/ui/Statistics/Statistics";
 import Head from "next/head";
 
 export default function Home() {
@@ -24,6 +25,8 @@ export default function Home() {
       <Hero />
 
       <Category />
+
+      <Statistics />
 
       <Discovery />
 

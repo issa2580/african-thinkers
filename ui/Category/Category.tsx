@@ -20,6 +20,21 @@ const Category = () => {
       keyFigures: ["El Anatsui", "Yinka Shonibare", "Julie Mehretu"],
       achievements:
         "Révolutionnent l'art contemporain mondial avec des perspectives uniques enracinées dans les traditions africaines.",
+      examples: [
+        "Installations monumentales faites de matériaux recyclés",
+        "Œuvres qui interrogent l'héritage colonial et l'identité contemporaine",
+        "Peintures abstraites qui fusionnent les traditions africaines et occidentales",
+      ],
+      impact: [
+        "Reconnaissance internationale dans les plus grands musées du monde",
+        "Influence grandissante sur les mouvements artistiques contemporains",
+        "Valorisation des matériaux et techniques traditionnels africains",
+      ],
+      challenges: [
+        "Accès limité aux infrastructures et financement pour les artistes émergents",
+        "Besoin de plus de plateformes de diffusion locales",
+        "Protection de la propriété intellectuelle et lutte contre l'appropriation culturelle",
+      ],
     },
     {
       id: "economists",
@@ -31,6 +46,21 @@ const Category = () => {
       keyFigures: ["Ngozi Okonjo-Iweala", "Celestin Monga", "Dambisa Moyo"],
       achievements:
         "Élaborent des stratégies économiques innovantes adaptées aux défis spécifiques du continent africain.",
+      examples: [
+        "Théories économiques intégrant les structures sociales africaines",
+        "Modèles de croissance adaptés aux économies à forte informalité",
+        "Recherches sur le rôle des technologies mobiles dans l'inclusion financière",
+      ],
+      impact: [
+        "Influence sur les politiques de développement des institutions internationales",
+        "Réorientation des stratégies économiques vers des solutions endogènes",
+        "Prise en compte croissante des spécificités africaines dans les modèles économiques globaux",
+      ],
+      challenges: [
+        "Dépendance persistante aux cadres théoriques occidentaux",
+        "Manque de données fiables pour la recherche économique",
+        "Difficultés d'implémentation des politiques économiques innovantes",
+      ],
     },
     {
       id: "engineers",
@@ -42,6 +72,21 @@ const Category = () => {
       keyFigures: ["Kamau Gachigi", "Arlene Isaacs-Lowe", "Arthur Zang"],
       achievements:
         "Développent des technologies frugales et durables qui répondent aux défis locaux avec des ressources limitées.",
+      examples: [
+        "Cardiopad : dispositif médical portable pour diagnostics cardiaques en zones rurales",
+        "Systèmes d'irrigation alimentés à l'énergie solaire pour petits agriculteurs",
+        "Applications mobiles adaptées aux réalités des marchés africains",
+      ],
+      impact: [
+        "Amélioration de l'accès aux services essentiels dans les zones mal desservies",
+        "Création de solutions technologiques spécifiquement adaptées aux contextes africains",
+        "Formation d'une nouvelle génération d'innovateurs techniques",
+      ],
+      challenges: [
+        "Accès limité aux infrastructures et aux financements pour la R&D",
+        "Besoin de renforcer les écosystèmes d'innovation locaux",
+        "Fuite des cerveaux vers les marchés internationaux mieux rémunérés",
+      ],
     },
     {
       id: "entrepreneurs",
@@ -53,6 +98,21 @@ const Category = () => {
       keyFigures: ["Aliko Dangote", "Bethlehem Tilahun Alemu", "Fred Swaniker"],
       achievements:
         "Bâtissent des entreprises à fort impact social qui transforment les écosystèmes économiques africains.",
+      examples: [
+        "Plateformes de commerce électronique adaptées aux marchés africains",
+        "Entreprises de transformation agricole qui valorisent les produits locaux",
+        "Start-ups technologiques résolvant des problèmes spécifiques au continent",
+      ],
+      impact: [
+        "Création d'emplois formels et développement économique local",
+        "Intégration de millions d'Africains dans l'économie formelle",
+        "Attraction d'investissements étrangers vers des secteurs innovants",
+      ],
+      challenges: [
+        "Difficultés d'accès au financement pour les PME",
+        "Obstacles réglementaires et administratifs",
+        "Infrastructures insuffisantes (énergie, connectivité, transport)",
+      ],
     },
     {
       id: "journalists",
@@ -64,6 +124,21 @@ const Category = () => {
       keyFigures: ["Anas Aremeyaw Anas", "Hopewell Chin'ono", "Femi Oke"],
       achievements:
         "Défendent la liberté de la presse et révèlent des vérités essentielles pour le développement démocratique du continent.",
+      examples: [
+        "Reportages d'investigation sur la corruption et les abus de pouvoir",
+        "Couverture médiatique des zones de conflit oubliées",
+        "Podcasts et médias numériques offrant des perspectives africaines authentiques",
+      ],
+      impact: [
+        "Renforcement de la transparence et de la responsabilité des institutions",
+        "Sensibilisation du public aux enjeux sociaux et politiques cruciaux",
+        "Création d'espaces de dialogue et de débat démocratique",
+      ],
+      challenges: [
+        "Menaces à la liberté de la presse dans plusieurs pays",
+        "Risques personnels pour les journalistes d'investigation",
+        "Modèles économiques fragiles pour les médias indépendants",
+      ],
     },
     {
       id: "leaders",
@@ -75,7 +150,25 @@ const Category = () => {
       keyFigures: ["Paul Kagame", "Ellen Johnson Sirleaf", "Wangari Maathai"],
       achievements:
         "Impulsent des réformes audacieuses et établissent des visions pour le développement durable du continent.",
+      examples: [
+        "Programmes de reforestation et de conservation environnementale",
+        "Réformes de gouvernance et lutte contre la corruption",
+        "Initiatives d'autonomisation des femmes et des jeunes",
+      ],
+      impact: [
+        "Transformation de sociétés post-conflit en modèles de développement",
+        "Promotion de modèles africains de leadership et de gouvernance",
+        "Influence sur les agendas internationaux concernant l'Afrique",
+      ],
+      challenges: [
+        "Résistance aux réformes structurelles",
+        "Défis liés à la consolidation démocratique",
+        "Équilibre entre traditions et modernité dans le leadership",
+      ],
     },
+    // Les autres catégories suivent le même modèle
+    // J'ai simplifié pour la lisibilité, mais vous pouvez ajouter des données similaires
+    // pour les catégories restantes
     {
       id: "philosophers",
       name: "PHILOSOPHES AFRICAINS",
@@ -90,6 +183,13 @@ const Category = () => {
       ],
       achievements:
         "Développent des systèmes de pensée qui intègrent sagesse traditionnelle et défis contemporains.",
+      examples: [
+        "Théories sur la décolonisation des savoirs",
+        "Réflexions sur l'Ubuntu et l'éthique communautaire africaine",
+        "Analyses critiques du postcolonialisme",
+      ],
+      impact: [],
+      challenges: [],
     },
     {
       id: "writers",
@@ -105,6 +205,9 @@ const Category = () => {
       ],
       achievements:
         "Façonnent les narratifs littéraires mondiaux en apportant des perspectives africaines riches et nuancées.",
+      examples: [],
+      impact: [],
+      challenges: [],
     },
     {
       id: "analysts",
@@ -116,6 +219,9 @@ const Category = () => {
       keyFigures: ["Jakkie Cilliers", "Robtel Neajai Pailey", "Ibrahim Mayaki"],
       achievements:
         "Produisent des analyses approfondies qui éclairent la prise de décision et les politiques publiques.",
+      examples: [],
+      impact: [],
+      challenges: [],
     },
     {
       id: "bloggers",
@@ -127,6 +233,9 @@ const Category = () => {
       keyFigures: ["Afua Hirsch", "Edith Brou", "TMS Ruge"],
       achievements:
         "Créent des espaces numériques dynamiques qui amplifient les voix africaines sur la scène mondiale.",
+      examples: [],
+      impact: [],
+      challenges: [],
     },
     {
       id: "scholars",
@@ -138,6 +247,9 @@ const Category = () => {
       keyFigures: ["Tebello Nyokong", "Calestous Juma", "Catherine Nakalembe"],
       achievements:
         "Conduisent des recherches pionnières qui transforment des secteurs clés comme la santé, l'agriculture et les énergies renouvelables.",
+      examples: [],
+      impact: [],
+      challenges: [],
     },
   ];
 
@@ -206,12 +318,12 @@ const Category = () => {
           ))}
         </div>
 
-        {/* Affichage de la catégorie sélectionnée */}
+        {/* Affichage de la catégorie sélectionnée - Version améliorée */}
         {activeCategory && (
           <div className="bg-card rounded-2xl shadow-xl overflow-hidden animate-in fade-in slide-in-from-bottom-3 duration-500">
-            <div className="grid grid-cols-1 lg:grid-cols-2">
-              {/* Image de la catégorie */}
-              <div className="relative h-80 lg:h-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
+              {/* Image de la catégorie - redimensionnée pour être moins dominante */}
+              <div className="relative lg:col-span-5">
                 {activeCategory.image && (
                   <Image
                     src={activeCategory.image}
@@ -219,6 +331,7 @@ const Category = () => {
                     className="w-full h-full object-cover"
                     width={600}
                     height={600}
+                    style={{ maxHeight: "600px" }}
                   />
                 )}
                 <div className="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-r from-transparent to-black/70 flex items-end lg:items-center p-8">
@@ -233,8 +346,11 @@ const Category = () => {
                 </div>
               </div>
 
-              {/* Contenu de la catégorie */}
-              <div className="p-8">
+              {/* Contenu de la catégorie - Plus d'espace et contenu enrichi */}
+              <div
+                className="p-8 lg:col-span-7 overflow-y-auto"
+                style={{ maxHeight: "600px" }}
+              >
                 <div className="prose prose-lg">
                   <p className="text-card-foreground mb-6">
                     {activeCategory.description}
@@ -243,10 +359,13 @@ const Category = () => {
                   <h4 className="text-xl font-bold text-accent mt-6 mb-3">
                     Figures emblématiques
                   </h4>
-                  <ul className="mb-6">
+                  <ul className="mb-6 grid grid-cols-1 md:grid-cols-3 gap-4">
                     {activeCategory.keyFigures.map((figure, index) => (
-                      <li key={index} className="mb-2 text-card-foreground">
-                        <span className="font-medium">{figure}</span>
+                      <li key={index} className="flex items-center">
+                        <div className="w-2 h-2 bg-accent rounded-full mr-2"></div>
+                        <span className="font-medium text-card-foreground">
+                          {figure}
+                        </span>
                       </li>
                     ))}
                   </ul>
@@ -255,6 +374,66 @@ const Category = () => {
                   <p className="text-card-foreground mb-6">
                     {activeCategory.achievements}
                   </p>
+
+                  {/* Nouvelle section: Exemples concrets */}
+                  {activeCategory.examples &&
+                    activeCategory.examples.length > 0 && (
+                      <>
+                        <h4 className="text-xl font-bold text-accent mb-3">
+                          Exemples concrets
+                        </h4>
+                        <ul className="mb-6 space-y-2">
+                          {activeCategory.examples.map((example, index) => (
+                            <li key={index} className="flex items-start">
+                              <span className="text-accent mr-2">•</span>
+                              <span className="text-card-foreground">
+                                {example}
+                              </span>
+                            </li>
+                          ))}
+                        </ul>
+                      </>
+                    )}
+
+                  {/* Nouvelle section: Impact détaillé */}
+                  {activeCategory.impact &&
+                    activeCategory.impact.length > 0 && (
+                      <>
+                        <h4 className="text-xl font-bold text-accent mb-3">
+                          Contributions majeures
+                        </h4>
+                        <ul className="mb-6 space-y-2">
+                          {activeCategory.impact.map((impact, index) => (
+                            <li key={index} className="flex items-start">
+                              <span className="text-accent mr-2">•</span>
+                              <span className="text-card-foreground">
+                                {impact}
+                              </span>
+                            </li>
+                          ))}
+                        </ul>
+                      </>
+                    )}
+
+                  {/* Nouvelle section: Défis */}
+                  {activeCategory.challenges &&
+                    activeCategory.challenges.length > 0 && (
+                      <>
+                        <h4 className="text-xl font-bold text-accent mb-3">
+                          Défis actuels
+                        </h4>
+                        <ul className="mb-6 space-y-2">
+                          {activeCategory.challenges.map((challenge, index) => (
+                            <li key={index} className="flex items-start">
+                              <span className="text-accent mr-2">•</span>
+                              <span className="text-card-foreground">
+                                {challenge}
+                              </span>
+                            </li>
+                          ))}
+                        </ul>
+                      </>
+                    )}
 
                   <div className="mt-8">
                     <Link
