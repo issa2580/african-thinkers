@@ -2,16 +2,14 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  // Ignorer les erreurs TypeScript lors du build
+  // Ignorer les erreurs TypeScript pendant le build
   typescript: {
     ignoreBuildErrors: true,
   },
-  // Ignorer les erreurs ESLint lors du build
+  // Ignorer les erreurs ESLint pendant le build
   eslint: {
     ignoreDuringBuilds: true,
   },
-  // Optimisation de la taille du bundle
-  swcMinify: true,
 };
 
 export default nextConfig;

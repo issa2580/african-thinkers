@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "export PATH=\"$PATH:./node_modules/.bin\" && yarn build",
+  "buildCommand": "next build",
   "framework": "nextjs",
   "outputDirectory": ".next"
 }
