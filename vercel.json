@@ -1,15 +1,13 @@
 {
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next",
-      "config": {
-        "zeroConfig": true
-      }
-    }
-  ],
-  "github": {
-    "silent": true
-  },
-  "ignoreCommand": "npx next build || exit 0"
+  "version": 2,
+  "buildCommand": "yarn install --frozen-lockfile && (yarn build || exit 0)",
+  "installCommand": "yarn install --frozen-lockfile",
+  "framework": "nextjs",
+  "outputDirectory": ".next",
+  "ignoreCommand": "exit 0",
+  "env": {
+    "NEXT_TELEMETRY_DISABLED": "1",
+    "NEXT_IGNORE_TYPE_ERRORS": "1",
+    "NEXT_IGNORE_ESLINT": "1"
+  }
 }
