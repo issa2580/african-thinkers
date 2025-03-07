@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build || exit 0",
-    "vercel-build": "next build || true",
+    "build": "tsc -b && next build",
     "start": "next start",
     "lint": "next lint"
   },
