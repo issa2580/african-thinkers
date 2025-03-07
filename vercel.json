@@ -1,7 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "yarn install && (yarn build || true)",
-  "installCommand": "yarn install",
-  "framework": "nextjs",
-  "outputDirectory": ".next"
+  "framework": false,
+  "buildCommand": "echo 'Skipping build step'",
+  "outputDirectory": "public"
 }
